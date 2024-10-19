@@ -33,8 +33,7 @@ import licor5 from "../Img/licores-5.jpeg";
 import licor8 from "../Img/licores-8.jpeg";
 import licor7 from "../Img/licores-7.jpeg";
 
-
-
+// jorgeeee
 
 import bebidaaperitivo1 from "../Img/bebidaaperitivo-1.jpeg";
 import bebidaaperitivo2 from "../Img/bebidaaperitivo-2.jpeg";
