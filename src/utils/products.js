@@ -45,25 +45,25 @@ import bebidaespirituosa1 from "../Img/bebidaespirituosa-1.jpeg";
 export const SliderData = [
   {
       id: 1,
-      title: "comboooooo",
+      title: "combo1",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
       cover: productImg05,
   },
   {
       id: 2,
-      title: "comboooooooooo",
+      title: "combo2",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
       cover: bebidaaperitivo1,
   },
   {
       id: 3,
-      title: "comboooooooooooo",
+      title: "combo3",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
       cover: vino2,
   },
   {
       id: 4,
-      title: "comboooooooooo",
+      title: "comboo4",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis lobortis consequat eu, quam etiam at quis ut convallis.",
       cover: vino3,
   },

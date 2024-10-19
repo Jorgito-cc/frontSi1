@@ -14,10 +14,10 @@ function FormLogin() {
   });
 
   return (
-    <div className="contenedor" id="body3">
-      <form onSubmit={onSubmit} className="formulario">
+    <div >
+      <form onSubmit={onSubmit} >
         <h1>Login</h1>
-        <div className="input-box">
+        <div >
           <input
             type="email"
             placeholder="email"
@@ -25,7 +25,7 @@ function FormLogin() {
           />
           <FaUser className="icon" />
         </div>
-        <div className="input-box">
+        <div >
           <input
             type="password"
             placeholder="Password"
