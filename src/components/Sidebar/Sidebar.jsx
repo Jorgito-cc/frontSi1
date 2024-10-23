@@ -23,6 +23,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   // Estado para manejar dropdowns
   const [isPaquete1Open, setIsPaquete1Open] = useState(false);
   const [isPaquete2Open, setIsPaquete2Open] = useState(false);
+  const [isPaquete30pen, setIsPaquete30pen] = useState(false)
 
   const ModSidebaropen = () => {
     setSidebarOpen(!sidebarOpen);
@@ -117,9 +118,21 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       <div className="divider"></div>
 
       {/* Paquete 4 - Compras (vacío por ahora) */}
-      <div className="link-container" onClick={() => {}}>
+      <div className="link-container" onClick={() => setIsPaquete30pen(!isPaquete30pen)}>
         <h3 className="dropdown-label">Compras</h3>
       </div>
+      {isPaquete30pen &&
+        enlacecompra.map(({ label, icon, to }) => (
+          <div className="link-container" key={label}>
+            <NavLink
+              to={to}
+              className={({ isActive }) => `links${isActive ? " active" : ""}`}
+            >
+              <div className="link-icon">{icon}</div>
+              {sidebarOpen && <span>{label}</span>}
+            </NavLink>
+          </div>
+        ))}
 
       <div className="divider"></div>
 
@@ -135,7 +148,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       </div>
 
 
-      {/*   */}
+      {/*  salirrrrrr */}
       <div className="link-container">
         <button onClick={handleLogout} className="links">
           <div className="link-icon"><MdLogout /></div>
@@ -193,7 +206,13 @@ const enlaceinventario = [
     to: "/dasboard/categoriaproducto", // Corregido a "dashboard"
   },
 ];
-
+const enlacecompra = [
+  {
+    label: "Lotes",
+    icon: <MdOutlineAnalytics />,
+    to: "/dasboard/lote",
+  }
+];
 const enlacesecundario = [
   {
     label: "Configuración",
