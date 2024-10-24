@@ -125,6 +125,7 @@ export const useAuth = () => {
             return;
           }
   /* cambiosssssss */
+  console.log("ohasodhfkasdhfkashdfkahsjdf")
           // Guardar datos en el estado
           setEsAutenticado(true);
           setUser(res.data);
