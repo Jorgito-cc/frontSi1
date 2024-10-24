@@ -31,8 +31,10 @@ export const useAuth = () => {
 
         if(res.data.user.rol === 'Administrador'|| res.data.user.rol ==='Cliente'){
           console.log("si entre")
-          cargarDatos();
-          cargarDatosProveedores();
+           cargarDatos();
+      
+          console.log(tableUser)
+           cargarDatosProveedores();
         }else{
           console.log("Acceso denegado para cargar datos user")
         }
@@ -129,11 +131,7 @@ export const useAuth = () => {
           setLoading(false);
           setRol(res.data.user.rol);
   
-          // Cargar datos si el rol es "Administrador" o "encargado"
-          if (res.data.user.rol === 'Administrador' || res.data.user.rol === 'Cliente') {
-             cargarDatos();
-             cargarDatosProveedores();
-          }
+       
 
         } catch (error) {
           console.error("Error al verificar el token:", error);

@@ -9,9 +9,10 @@ function FormLogin() {
 
   const { signin } = useAuth();
 
-  const onSubmit = handleSubmit((data) => {
-    signin(data);
+  const onSubmit = handleSubmit(async (data) => {
+    await signin(data);
   });
+  
 
   return (
     <div >
